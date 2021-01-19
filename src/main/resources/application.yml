@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: additioan-service
+server:
+  port: 8070
