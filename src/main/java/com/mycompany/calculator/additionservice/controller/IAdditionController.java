@@ -4,7 +4,6 @@ import com.mycompany.calculator.additionservice.domain.Calculation;
 import com.mycompany.calculator.additionservice.domain.CalculationResult;
 import com.mycompany.calculator.additionservice.service.AdditionService;
 import com.mycompany.calculator.additionservice.service.IAdditionService;
-import com.sun.media.jfxmedia.Media;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
