@@ -1,0 +1,20 @@
+---
+version: '3.2'
+services:
+
+  addition-service:
+    hostname: addition-service
+    image: registry.hub.docker.com/addition-service:latest
+    ports:
+      - "8070:8070"
+    environment:
+      SERVER_PORT: 8070
+#      SERVER_ADDRESS: localhost
+  subtraction-service:
+    hostname: subtraction-service
+    image: registry.hub.docker.com/subtraction-service:latest
+    ports:
+      - "8071:8071"
+    environment:
+      SERVER_PORT: 8071
+#      SERVER_ADDRESS: localhost

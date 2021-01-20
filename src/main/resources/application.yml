@@ -3,3 +3,4 @@ spring:
     name: additioan-service
 server:
   port: 8070
+  address: localhost
