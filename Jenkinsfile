@@ -14,24 +14,11 @@ node() {
     }
     stage('Docker') {
 
+            docker.image('mbarkin26/addition-service:latest').withRun('-e "SERVER_PORT: 8070" -p 8070:8070')
+            docker.image('mbarkin26/subtraction-service:latest').withRun('-e "SERVER_PORT: 8071" -p 8071:8071')
+	    docker.image('mbarkin26/calculator-service:latest').withRun('-e "SERVER_PORT: 8072" -p 8072:8072')
             
-                docker { image 'mbarkin26/addition-service:latest' }
-            
-          
-             
-          
-            
-                docker { image 'mbarkin26/subtraction-service:latest' }
-           
-        
-               
-     
-            
-                docker { image 'mbarkin26/calculator-service:latest' }
-          
-          
-              
-          
+  
 
     }
     stage('Cucumber Tests') {
