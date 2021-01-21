@@ -14,24 +14,24 @@ node() {
     }
     stage('Docker') {
 
-            agent {
+            
                 docker { image 'mbarkin26/addition-service:latest' }
-            }
-            steps {
-                sh 'mvn --version'
-            }
-            agent {
+            
+          
+             
+          
+            
                 docker { image 'mbarkin26/subtraction-service:latest' }
-            }
-            steps {
-                sh 'mvn --version'
-            }
-            agent {
+           
+        
+               
+     
+            
                 docker { image 'mbarkin26/calculator-service:latest' }
-            }
-            steps {
-                sh 'mvn --version'
-            }
+          
+          
+              
+          
 
     }
     stage('Cucumber Tests') {
