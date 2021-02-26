@@ -4,19 +4,19 @@ version: '3.2'
 #    isolation-network:
 #      driver: bridge
 services:
-  calculator-ui:
-    container_name: calculator-ui
-    build:
-      context: .
-      dockerfile: Dockerfile
-    volumes:
-      - '.:/app'
-      - '/app/node_modules'
-    ports:
-      - 3001:3000
+#  calculator-ui:
+#    container_name: calculator-ui
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+#    volumes:
+#      - '.:/app'
+#      - '/app/node_modules'
+#    ports:
+#      - 3001:3000
   addition-service:
     hostname: addition-service
-    image: mbarkin26/addition-service:latest
+    image: registry.hub.docker.com/addition-service:latest
     ports:
       - "8070:8070"
     environment:

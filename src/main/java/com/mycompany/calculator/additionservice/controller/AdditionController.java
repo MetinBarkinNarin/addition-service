@@ -2,6 +2,7 @@ package com.mycompany.calculator.additionservice.controller;
 
 import com.mycompany.calculator.additionservice.domain.CalculationResult;
 import com.mycompany.calculator.additionservice.service.AdditionService;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,7 +18,6 @@ public class AdditionController implements IAdditionController {
     public AdditionController(AdditionService iAdditionServiceoooo) {
         this.iAdditionServiceoooo = iAdditionServiceoooo;
     }
-
 
     @GetMapping(
             value = "/calculate",

@@ -3,3 +3,24 @@ spring:
     name: additioan-service
 server:
   port: 8070
+api:
+  common:
+    version: 1.0.0
+    description:
+
+    apiTitle:
+    String apiTitle;
+    @Value("${api.common.description}")
+    String apiDescription;
+    @Value("${api.common.termsOfServiceUrl}")
+    String apiTermsOfServiceUrl;
+    @Value("${api.common.license}")
+    String apiLicense;
+    @Value("${api.common.licenseUrl}")
+    String apiLicenseUrl;
+    @Value("${api.common.contact.name}")
+    String apiContactName;
+    @Value("${api.common.contact.url}")
+    String apiContactUrl;
+    @Value("${api.common.contact.email}")
+    String apiContactEmail;
